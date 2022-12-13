@@ -3,15 +3,6 @@ class McuList {
 
   McuList({required this.mcu});
 
-  McuList.fromJson(Map<String, dynamic> json) {
-    if (json['mcu'] != null) {
-      mcu = <Mcu>[];
-      json['mcu'].forEach((v) {
-        mcu.add(Mcu.fromJson(v));
-      });
-    }
-  }
-
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['mcu'] = mcu.map((v) => v.toJson()).toList();
@@ -51,21 +42,31 @@ class Mcu {
       this.voteAverage,
       this.voteCount});
 
-  Mcu.fromJson(Map<String, dynamic> json) {
-    adult = json['adult'];
-    backdropPath = json['backdrop_path'];
-    genreIds = json['genre_ids'].cast<int>();
-    id = json['id'];
-    originalLanguage = json['original_language'];
-    originalTitle = json['original_title'];
-    overview = json['overview'];
-    popularity = json['popularity'];
-    posterPath = json['poster_path'];
-    releaseDate = json['release_date'];
-    title = json['title'];
-    video = json['video'];
-    voteAverage = json['vote_average'];
-    voteCount = json['vote_count'];
+  static List<Mcu> fromJsonList(List<dynamic> json) {
+    List<Mcu> mcuMovies = [];
+    if (json.isEmpty) {
+      return mcuMovies;
+    }
+    for (int i = 0; i < json.length; i++) {
+      Mcu movie = Mcu(
+        adult: json[i]['adult'],
+        backdropPath: json[i]['backdrop_path'],
+        genreIds: List<int>.from(json[i]['genre_ids']),
+        id: json[i]['id'],
+        originalLanguage: json[i]['original_language'],
+        originalTitle: json[i]['original_title'],
+        overview: json[i]['overview'],
+        popularity: json[i]['popularity'],
+        posterPath: json[i]['poster_path'],
+        releaseDate: json[i]['release_date'],
+        title: json[i]['title'],
+        video: json[i]['video'],
+        voteAverage: json[i]['vote_average'],
+        voteCount: json[i]['vote_count'],
+      );
+      mcuMovies.add(movie);
+    }
+    return mcuMovies;
   }
 
   Map<String, dynamic> toJson() {

@@ -1,24 +1,22 @@
 import 'dart:convert';
 
-import 'package:gen_test_marvel/features/data/models/mcu_model.dart';
+import 'package:flutter/material.dart';
 
-import '../../../json/movie_mock_api.dart';
+import '../models/movie_model.dart';
 
 abstract class FetchMovieListDataSource {
-  List<Mcu> fetchMovieList();
+  Future<List<Mcu>> fetchMovieList(BuildContext context);
 }
 
 class FetchMovieListDataSourceImpl implements FetchMovieListDataSource {
   @override
-  List<Mcu> fetchMovieList() {
-    final response = jsonDecode(movielist) as Map<String, dynamic>;
+  Future<List<Mcu>> fetchMovieList(BuildContext context) async {
+    final response =
+        await DefaultAssetBundle.of(context).loadString('assets/mock.json');
+    final data = jsonDecode(response) as Map<String, dynamic>;
 
-    var result = Mcu.fromJson(response);
+    var result = Mcu.fromJsonList(data['mcu']);
 
-    print(result);
-
-    var result2 = McuList.fromJson(response);
-
-    return result2.mcu;
+    return result;
   }
 }

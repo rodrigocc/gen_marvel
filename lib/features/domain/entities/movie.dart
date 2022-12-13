@@ -54,6 +54,6 @@ class Movie {
 //             "release_date": "2011-07-22",
 //             "title": "Capitão América: O Primeiro Vingador",
 //             "video": false,
-//             "vote_average": 7.0,
+//             "vote_average":git remote add origin https://github.com/rodrigocc/gen_marvel.git 7.0,
 //             "vote_count": 16878
 //         },

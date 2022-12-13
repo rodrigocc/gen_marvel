@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'themes/home_initial_page.dart';
+import 'home_initial_page.dart';
 
 class MarvelApp extends StatelessWidget {
   const MarvelApp({super.key});
