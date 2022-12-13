@@ -26,7 +26,7 @@ class _HomeInitialPageState extends State<HomeInitialPage> {
                       leading: Text(movielist.data?[index].title ?? ''),
                     );
                   },
-                  itemCount: 10,
+                  itemCount: movielist.data!.length,
                 );
               } else {
                 return const Center(
