@@ -23,3 +23,13 @@ class MovieListLoaded extends MoviesState {
   // TODO: implement props
   List<Object?> get props => [movielist];
 }
+
+class MovieListLoadingError extends MoviesState {
+  final String? errorMsg;
+
+  MovieListLoadingError({this.errorMsg});
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => [errorMsg];
+}
