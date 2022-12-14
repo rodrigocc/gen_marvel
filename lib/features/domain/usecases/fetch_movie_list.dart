@@ -1,21 +1,17 @@
+import 'package:gen_test_marvel/config/error/failure.dart';
+import 'package:dartz/dartz.dart';
+import 'package:gen_test_marvel/config/usecases/async_usecase.dart';
+
+import '../../../config/usecases/usecase_params.dart';
 import '../../data/models/mcu_list_model.dart';
+import '../repositories/movie_repository.dart';
 
-abstract class FetchMovieListUseCase {
-  Future<List<McuModel>> fetchMovieList();
-}
-
-class FetchMovieListUseCaseImpl implements FetchMovieListUseCase {
-
+class FetchMovieListUseCase implements AsyncListUseCase<McuModel, NoParams> {
   final MovieListRepository? movieListRepository;
 
-  FetchMovieListUseCaseImpl(this.movieListRepository);
-
+  FetchMovieListUseCase(this.movieListRepository);
 
   @override
-  Future<List<McuModel>> fetchMovieList() async{
-
-    await movieListRepository.
-
-     
-  }
+  Future<Either<Failure, List<McuModel>>> call(params) async =>
+      await movieListRepository!.fetchMovielist();
 }
