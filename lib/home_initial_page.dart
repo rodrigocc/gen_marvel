@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gen_test_marvel/features/data/datasource/fetch_movie_list_datasource.dart';
-import 'package:gen_test_marvel/features/data/models/movie_model.dart';
+import 'package:gen_test_marvel/features/data/models/mcu_list_model.dart';
 
 class HomeInitialPage extends StatefulWidget {
   const HomeInitialPage({super.key});
@@ -16,7 +16,7 @@ class _HomeInitialPageState extends State<HomeInitialPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: FutureBuilder<List<Mcu>>(
+        body: FutureBuilder<List<McuModel>>(
             future: movieListDataSourceImpl.fetchMovieList(context),
             builder: (context, movielist) {
               if (movielist.hasData) {

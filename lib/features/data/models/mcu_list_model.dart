@@ -1,7 +1,7 @@
-class McuList {
-  late List<Mcu> mcu;
+class McuListModel {
+  late List<McuModel> mcu;
 
-  McuList({required this.mcu});
+  McuListModel({required this.mcu});
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
@@ -10,7 +10,7 @@ class McuList {
   }
 }
 
-class Mcu {
+class McuModel {
   bool? adult;
   String? backdropPath;
   List<int>? genreIds;
@@ -26,7 +26,7 @@ class Mcu {
   double? voteAverage;
   int? voteCount;
 
-  Mcu(
+  McuModel(
       {this.adult,
       this.backdropPath,
       this.genreIds,
@@ -42,13 +42,13 @@ class Mcu {
       this.voteAverage,
       this.voteCount});
 
-  static List<Mcu> fromJsonList(List<dynamic> json) {
-    List<Mcu> mcuMovies = [];
+  static List<McuModel> fromJsonList(List<dynamic> json) {
+    List<McuModel> mcuMovies = [];
     if (json.isEmpty) {
       return mcuMovies;
     }
     for (int i = 0; i < json.length; i++) {
-      Mcu movie = Mcu(
+      McuModel movie = McuModel(
         adult: json[i]['adult'],
         backdropPath: json[i]['backdrop_path'],
         genreIds: List<int>.from(json[i]['genre_ids']),

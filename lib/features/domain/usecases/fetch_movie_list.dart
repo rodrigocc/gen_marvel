@@ -1,5 +1,13 @@
-import 'package:gen_test_marvel/features/domain/entities/movie.dart';
+import '../../data/models/mcu_list_model.dart';
 
-abstract class FetchMovieList {
-  List<Movie> fetchMovieList();
+abstract class FetchMovieListUseCase {
+  Future<List<McuModel>> fetchMovieList();
+}
+
+class FetchMovieListUseCaseImpl implements FetchMovieListUseCase {
+  @override
+  Future<List<McuModel>> fetchMovieList() {
+    // TODO: implement fetchMovieList
+    throw UnimplementedError();
+  }
 }
