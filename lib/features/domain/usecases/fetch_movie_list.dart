@@ -5,9 +5,17 @@ abstract class FetchMovieListUseCase {
 }
 
 class FetchMovieListUseCaseImpl implements FetchMovieListUseCase {
+
+  final MovieListRepository? movieListRepository;
+
+  FetchMovieListUseCaseImpl(this.movieListRepository);
+
+
   @override
-  Future<List<McuModel>> fetchMovieList() {
-    // TODO: implement fetchMovieList
-    throw UnimplementedError();
+  Future<List<McuModel>> fetchMovieList() async{
+
+    await movieListRepository.
+
+     
   }
 }
