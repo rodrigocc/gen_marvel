@@ -5,11 +5,14 @@ abstract class MoviesEvent extends Equatable {
 }
 
 class FetchMovieList extends MoviesEvent {
-  final List<McuModel> movielist;
   final BuildContext currentContext;
 
-  const FetchMovieList({required this.currentContext, required this.movielist});
+  const FetchMovieList({
+    required this.currentContext,
+  });
 
   @override
-  List<Object> get props => [currentContext, movielist];
+  List<Object> get props => [
+        currentContext,
+      ];
 }
