@@ -28,35 +28,71 @@ class _MovieListDisplayState extends State<MovieListDisplay> {
       if (state is MovieListLoaded) {
         movielist = state.movielist;
 
-        return ListView.separated(
-          scrollDirection: Axis.horizontal,
-          shrinkWrap: true,
-          itemBuilder: (context, index) {
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Container(
-                    height: 300,
-                    width: 220,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(25),
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            const Expanded(
+                flex: 1,
+                child: Align(
+                  alignment: Alignment.bottomLeft,
+                  child: Text(
+                    'MARVEL CINEMATIC UNIVERSE',
+                    maxLines: 3,
+                    softWrap: true,
+                    style: TextStyle(
                         color: Colors.white,
-                        image: DecorationImage(
-                            fit: BoxFit.fill,
-                            alignment: Alignment.centerLeft,
-                            image: NetworkImage(
-                                movielist![index].posterPath ?? '')))),
-                const SizedBox(
-                  height: 10,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30),
+                  ),
+                )),
+            const SizedBox(
+              height: 20,
+            ),
+            const Text(
+              'LINHA DO TEMPO',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16),
+            ),
+            Expanded(
+              flex: 1,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemBuilder: (context, index) {
+                  return Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                          height: 300,
+                          width: 220,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Colors.white,
+                              image: DecorationImage(
+                                  fit: BoxFit.fill,
+                                  alignment: Alignment.centerLeft,
+                                  image: NetworkImage(
+                                      movielist![index].posterPath ?? '')))),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(movielist![index].title ?? '',
+                          style: const TextStyle(color: Colors.white)),
+                    ],
+                  );
+                },
+                itemCount: movielist!.length,
+                separatorBuilder: (context, index) => const SizedBox(
+                  width: 10,
                 ),
-                Text(movielist![index].title ?? ''),
-              ],
-            );
-          },
-          itemCount: movielist!.length,
-          separatorBuilder: (context, index) => const SizedBox(
-            width: 10,
-          ),
+              ),
+            ),
+          ],
         );
       } else {
         return const Center(

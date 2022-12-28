@@ -18,7 +18,9 @@ class _HomeInitialPageState extends State<HomeInitialPage> {
     return Scaffold(
       body: Container(
           decoration: const BoxDecoration(
+              boxShadow: [BoxShadow(blurRadius: 1)],
               image: DecorationImage(
+                  opacity: 0.6,
                   fit: BoxFit.cover,
                   image: AssetImage('assets/home_initial_background.jpeg'))),
           padding: const EdgeInsetsDirectional.all(10),
