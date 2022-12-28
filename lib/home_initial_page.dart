@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gen_test_marvel/features/data/datasource/fetch_movie_list_datasource.dart';
 import 'package:gen_test_marvel/features/presenter/bloc/movies_bloc.dart';
 
 import 'config/injection_container.dart';
@@ -14,14 +13,18 @@ class HomeInitialPage extends StatefulWidget {
 }
 
 class _HomeInitialPageState extends State<HomeInitialPage> {
-  final FetchMovieListDataSourceImpl movieListDataSourceImpl =
-      FetchMovieListDataSourceImpl();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: BlocProvider(
-            create: (_) => serviceLocator<MoviesBloc>(),
-            child: const MovieListDisplay()));
+      body: Container(
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage('assets/home_initial_background.jpeg'))),
+          padding: const EdgeInsetsDirectional.all(10),
+          child: BlocProvider(
+              create: (_) => serviceLocator<MoviesBloc>(),
+              child: const MovieListDisplay())),
+    );
   }
 }

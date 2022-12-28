@@ -28,13 +28,35 @@ class _MovieListDisplayState extends State<MovieListDisplay> {
       if (state is MovieListLoaded) {
         movielist = state.movielist;
 
-        return ListView.builder(
+        return ListView.separated(
+          scrollDirection: Axis.horizontal,
+          shrinkWrap: true,
           itemBuilder: (context, index) {
-            return ListTile(
-              leading: Text(movielist![index].title ?? ''),
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                    height: 300,
+                    width: 220,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: Colors.white,
+                        image: DecorationImage(
+                            fit: BoxFit.fill,
+                            alignment: Alignment.centerLeft,
+                            image: NetworkImage(
+                                movielist![index].posterPath ?? '')))),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(movielist![index].title ?? ''),
+              ],
             );
           },
           itemCount: movielist!.length,
+          separatorBuilder: (context, index) => const SizedBox(
+            width: 10,
+          ),
         );
       } else {
         return const Center(
