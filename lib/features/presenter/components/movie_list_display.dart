@@ -81,8 +81,17 @@ class _MovieListDisplayState extends State<MovieListDisplay> {
                       const SizedBox(
                         height: 10,
                       ),
-                      Text(movielist![index].title ?? '',
-                          style: const TextStyle(color: Colors.white)),
+                      Text(
+                        movielist![index].title ?? '',
+                        style: const TextStyle(
+                          color: Colors.white,
+                        ),
+                        softWrap: true,
+                      ),
+                      Text(
+                        "(${DateTime.parse(movielist![index].releaseDate ?? '').year.toString()})",
+                        style: const TextStyle(color: Colors.grey),
+                      ),
                     ],
                   );
                 },
