@@ -19,17 +19,14 @@
 
 ![Mobile Screenshot 1](screenshots/mobile0.png)![Mobile Screenshot 2](screenshots/mobile1.png)
 
-## <p align='center'>@luanbatistadev</p>
+## <p align='center'>@rodrigocc</p>
 
 <p align="center">
-<a href="https://github.com/luanbatistadev">
-  <img align="center" alt="Luan Batista | GitHub" width="45px" src="assets\images\github ico.png" />
-</a>
-<a href="https://twitter.com/luanbatistadev">
-  <img align="center" alt="Luan Batista | Twitter" width="45px" src="assets\images\twitter ico.png" />
-</a>
-<a href="https://br.linkedin.com/in/luan-rafael-batista-ramos-4379941a8">
-  <img align="center" alt="Luan Batista | LinkedIn" width="45px" src="assets\images\linkedin ico.ico" />
+<a href="https://github.com/rodrigocc">
+  <img align="center" alt="Rodrigo Araujo | GitHub" width="45px" src="assets\images\github ico.png" />
+
+<a href="https://www.linkedin.com/in/rodrigo-araujo-1a8509174/">
+  <img align="center" alt="Rodrigo Araujo | LinkedIn" width="45px" src="assets\images\linkedin ico.ico" />
 </a>
 <a href="https://www.twitch.tv/luangamegg">
   <img align="center" alt="Luan Batista | Twitch" width="45px" src="assets\images\twitch ico.png" />
@@ -40,9 +37,9 @@
   Open Source
 </h2>
 <p align="center">
-  <sub>Copyright © 2021-present, Luan Batista.</sub>
+  <sub>Copyright © 2022-present, Rodrigo Araujo.</sub>
 </p>
-<p align="center">Netflix Clone Responsive UI - Flutter <a href="/LICENSE">is MIT licensed 💖</a></p>
+<p align="center">Mcu Marvel TimeLine App <a href="/LICENSE">is MIT licensed 💖</a></p>
 <p align="center">
   <img src="assets\icons\netflix.ico" width="35" />
 </p>
