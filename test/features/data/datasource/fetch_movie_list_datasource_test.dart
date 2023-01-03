@@ -16,7 +16,7 @@ void main() async {
   late final ILocalClient clientlocal;
   late final BuildContextMock currentContext;
 
-  setUp(() async {
+  setUpAll(() async {
     clientlocal = ClientLocalMock();
     sut = FetchMovieListDataSourceImpl(clientlocal);
     currentContext = BuildContextMock();
