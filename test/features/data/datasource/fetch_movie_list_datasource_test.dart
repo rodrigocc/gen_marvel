@@ -32,11 +32,15 @@ void main() async {
       expect(result, isA<List<McuModel>>());
     });
 
+    test(
+        'Should return an DataSourceError When receiving an invalid response Error ',
+        () {
+      when(() => clientlocal.getAsset(any(), currentContext))
+          .thenThrow(Exception());
 
-    test('Should return an DataSourceError When receiving an invalid response Error ', () {
-      when(() => clientlocal.getAsset(any(), currentContext)).thenThrow()
-      
+      final result = sut.fetchMovieList(currentContext);
+
+      expect(result, throwsA(isA<Exception>()));
     });
-  
   });
 }
