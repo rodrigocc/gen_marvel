@@ -27,10 +27,7 @@
 
 <a href="https://www.linkedin.com/in/rodrigo-araujo-1a8509174/">
   <img align="center" alt="Rodrigo Araujo | LinkedIn" width="45px" src="assets\images\linkedin ico.ico" />
-</a>
-<a href="https://www.twitch.tv/luangamegg">
-  <img align="center" alt="Luan Batista | Twitch" width="45px" src="assets\images\twitch ico.png" />
-</a>
+
 </p>
 
 <h2 align="center">
