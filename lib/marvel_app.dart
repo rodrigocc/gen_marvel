@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home_initial_page.dart';
+import 'features/presenter/pages/home_initial_page.dart';
 
 class MarvelApp extends StatelessWidget {
   const MarvelApp({super.key});
@@ -8,10 +8,11 @@ class MarvelApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: const HomeInitialPage());
+      title: 'Gen Marvel App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const HomeInitialPage(),
+    );
   }
 }

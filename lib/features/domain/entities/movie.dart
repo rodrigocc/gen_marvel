@@ -30,30 +30,3 @@ class Movie {
       required this.voteAverage,
       required this.voteCount});
 }
-
-
-
-
-
-
-
-// {
-//             "adult": false,
-//             "backdrop_path": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg",
-//             "genre_ids": [
-//                 28,
-//                 12,
-//                 878
-//             ],
-//             "id": 1771,
-//             "original_language": "en",
-//             "original_title": "Captain America: The First Avenger",
-//             "overview": "Steve Rogers é um jovem que participa de experiências visando a criação do supersoldado americano. Quando os oficiais militares conseguem transformá-lo em uma arma humana, eles percebem que não podem arriscar a vida do jovem nas batalhas de guerra.",
-//             "popularity": 44.224,
-//             "poster_path": "/xYijVAPunk6neVW2KHKE4Lp45ZU.jpg",
-//             "release_date": "2011-07-22",
-//             "title": "Capitão América: O Primeiro Vingador",
-//             "video": false,
-//             "vote_average":git remote add origin https://github.com/rodrigocc/gen_marvel.git 7.0,
-//             "vote_count": 16878
-//         },

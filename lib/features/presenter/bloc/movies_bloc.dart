@@ -15,9 +15,15 @@ class MoviesBloc extends Bloc<MoviesEvent, MoviesState> {
       final result = await getMovieListUseCase!(event.currentContext);
 
       if (result.isRight()) {
-        emit(MovieListLoaded(movielist: result.getOrElse(() => [])));
+        emit(
+          MovieListLoaded(
+            movielist: result.getOrElse(() => []),
+          ),
+        );
       } else {
-        emit(MovieListLoadingError(errorMsg: 'Erro'));
+        emit(
+          MovieListLoadingError(errorMsg: 'Erro'),
+        );
       }
     });
   }

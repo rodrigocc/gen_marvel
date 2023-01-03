@@ -33,19 +33,20 @@ class _MovieListDisplayState extends State<MovieListDisplay> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const Expanded(
-                flex: 1,
-                child: Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Text(
-                    'MARVEL CINEMATIC UNIVERSE',
-                    maxLines: 3,
-                    softWrap: true,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30),
-                  ),
-                )),
+              flex: 1,
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  'MARVEL CINEMATIC UNIVERSE',
+                  maxLines: 3,
+                  softWrap: true,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30),
+                ),
+              ),
+            ),
             const SizedBox(
               height: 20,
             ),
@@ -68,16 +69,19 @@ class _MovieListDisplayState extends State<MovieListDisplay> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Container(
-                          height: 300,
-                          width: 220,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: Colors.white,
-                              image: DecorationImage(
-                                  fit: BoxFit.fill,
-                                  alignment: Alignment.centerLeft,
-                                  image: NetworkImage(
-                                      movielist![index].posterPath ?? '')))),
+                        height: 300,
+                        width: 220,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25),
+                          color: Colors.white,
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            alignment: Alignment.centerLeft,
+                            image: NetworkImage(
+                                movielist![index].posterPath ?? ''),
+                          ),
+                        ),
+                      ),
                       const SizedBox(
                         height: 10,
                       ),
@@ -92,6 +96,11 @@ class _MovieListDisplayState extends State<MovieListDisplay> {
                         "(${DateTime.parse(movielist![index].releaseDate ?? '').year.toString()})",
                         style: const TextStyle(color: Colors.grey),
                       ),
+                      !movielist![index].title!.contains('\n')
+                          ? const SizedBox(
+                              height: 17,
+                            )
+                          : const SizedBox.shrink()
                     ],
                   );
                 },

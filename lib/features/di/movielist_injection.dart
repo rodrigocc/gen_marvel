@@ -16,5 +16,5 @@ Future<void> movieInjection() async {
       MovieListRepositoryImpl(fetchMovieListDataSource: serviceLocator()));
 
   serviceLocator.registerLazySingleton<FetchMovieListDataSource>(
-      () => FetchMovieListDataSourceImpl());
+      () => FetchMovieListDataSourceImpl(serviceLocator()));
 }
