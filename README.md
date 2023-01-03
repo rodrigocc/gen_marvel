@@ -1,16 +1,49 @@
-# gen_test_marvel
+<samp>
 
-A new Flutter project.
+# <p align='center'>Netflix Clone UI - Flutter</p>
+# <p align='center'>Web & Mobile: IOS | Android</p>
 
-## Getting Started
+## <p align='center'>Web Version with Flutter!</p>
+- ### This web version uses flutter.
 
-This project is a starting point for a Flutter application.
+<p align="center"><img src="assets/videos/web.gif" /></p>
 
-A few resources to get you started if this is your first Flutter project:
+![Web Screenshot](screenshots/web.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## <p align='center'>Mobile Version: Android | IOS</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- ### The mobile version, now the video player is working!
+
+<p align="center"><img src="assets/videos/mobile.gif" /></p>
+
+
+![Mobile Screenshot 1](screenshots/mobile0.png)![Mobile Screenshot 2](screenshots/mobile1.png)
+
+## <p align='center'>@luanbatistadev</p>
+
+<p align="center">
+<a href="https://github.com/luanbatistadev">
+  <img align="center" alt="Luan Batista | GitHub" width="45px" src="assets\images\github ico.png" />
+</a>
+<a href="https://twitter.com/luanbatistadev">
+  <img align="center" alt="Luan Batista | Twitter" width="45px" src="assets\images\twitter ico.png" />
+</a>
+<a href="https://br.linkedin.com/in/luan-rafael-batista-ramos-4379941a8">
+  <img align="center" alt="Luan Batista | LinkedIn" width="45px" src="assets\images\linkedin ico.ico" />
+</a>
+<a href="https://www.twitch.tv/luangamegg">
+  <img align="center" alt="Luan Batista | Twitch" width="45px" src="assets\images\twitch ico.png" />
+</a>
+</p>
+
+<h2 align="center">
+  Open Source
+</h2>
+<p align="center">
+  <sub>Copyright © 2021-present, Luan Batista.</sub>
+</p>
+<p align="center">Netflix Clone Responsive UI - Flutter <a href="/LICENSE">is MIT licensed 💖</a></p>
+<p align="center">
+  <img src="assets\icons\netflix.ico" width="35" />
+</p>
+</samp>
