@@ -3,7 +3,7 @@
 # <p align='center'>MCU MARVEL TIMELINE</p>
 ## <p align='center'>Mobile Version: Android | IOS</p>
 
-- ### The mobile version, now the video player is working!
+- ### A Simple Flutter UI to Pratice Clean Archithecture + Bloc State and SOLID principles!
 
 <p align="center">
 
