@@ -7,7 +7,8 @@
 
 <p align="center">
 
-<img src="https://i.imgur.com/mZTyvL4.png" />
+<img src="https://i.imgur.com/mZTyvL4.png" width="400" 
+     height="500"/>
  
 
 </p>
