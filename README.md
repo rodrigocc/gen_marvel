@@ -8,7 +8,7 @@
 <p align="center"><img src="assets/videos/mobile.gif" /></p>
 
 
-![Mobile Screenshot 1](screenshots/mobile0.png)![Mobile Screenshot 2](screenshots/mobile1.png)
+![Mobile Screenshot 1](https://i.imgur.com/mZTyvL4.png)![Mobile Screenshot 2](screenshots/mobile1.png)
 
 ## <p align='center'>@rodrigocc</p>
 
