@@ -13,7 +13,7 @@
 </p>
 
 
-![Mobile Screenshot 1](https://i.imgur.com/QExT5mp.png)![Mobile Screenshot 2](https://media4.giphy.com/media/4YWAyqWlAN1feNMDmC/giphy.gif?cid=790b7611a66081f3daa125b4d131f7d87c404b8b82d0d4e7&rid=giphy.gif&ct=g)
+![Mobile Screenshot 1](https://i.imgur.com/QExT5mp.png).   ![Mobile Screenshot 2](https://media4.giphy.com/media/4YWAyqWlAN1feNMDmC/giphy.gif?cid=790b7611a66081f3daa125b4d131f7d87c404b8b82d0d4e7&rid=giphy.gif&ct=g)
 
 ## <p align='center'>@rodrigocc</p>
 
