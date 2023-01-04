@@ -5,7 +5,12 @@
 
 - ### The mobile version, now the video player is working!
 
-<p align="center"><img src="assets/videos/mobile.gif" /></p>
+<p align="center">
+
+<img src="https://i.imgur.com/mZTyvL4.png" />
+ 
+
+</p>
 
 
 ![Mobile Screenshot 1](https://i.imgur.com/mZTyvL4.png)![Mobile Screenshot 2](screenshots/mobile1.png)
