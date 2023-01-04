@@ -13,7 +13,7 @@
 </p>
 
 
-![Mobile Screenshot 1](https://i.imgur.com/mZTyvL4.png)![Mobile Screenshot 2](screenshots/mobile1.png)
+![Mobile Screenshot 1](https://i.imgur.com/QExT5mp.png)![Mobile Screenshot 2](screenshots/mobile1.png)
 
 ## <p align='center'>@rodrigocc</p>
 
